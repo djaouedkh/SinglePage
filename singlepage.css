@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: -webkit-pictograph;
+}
+
+/* Nav */
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    z-index: 50;
+    background-color: rgb(255 255 255 / 50%);
+}
+.link{
+    text-decoration: none;
+    color: black;
+    font-size: 3vmin;
+}
+.link0{ 
+    display: none;
+}
+
+/* Page */
+.page{
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    position: absolute;
+    transition: 1s;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    text-align: center;
+}
+.page0{
+    background-image: url("image/horse-1804425_1920.jpg"); 
+    z-index: 5;
+    opacity: 1;
+
+}
+.page1{
+    background-image: url("image/horse-3765847_1920.jpg");
+    z-index: -5;
+}
+.page2{
+    background-image: url("image/horse-4810484_1920.jpg");
+    z-index: -5;
+}
+.page3{
+    background-image: url("image/horse-60153_1920.jpg");
+    z-index: -5;
+}
+.page4{
+    background-image: url("image/white-horse-3010129_1920.jpg");
+    z-index: -5;
+}
+
+/* Title */
+.h1-page0, .h3-page0, .h2-page0{
+    background-color: rgb(0 0 0 / 50%);
+    border-radius: 10px;
+}
+.h1-page0{
+    font-size: 10vmin;
+}
+.h3-page0{
+    font-size: 4vmin;
+}
+.h2-page0{
+    font-size: 7vmin;
+}
+
+/* Menu Burger */
+.menu-burger{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    z-index: 50;
+    color: white;
+    cursor: pointer;
+}
+.contain-link-burger{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0 0 0 / 50%);
+    border-radius: 0 5px 5px 0;
+    padding: 5px 0;
+    position: relative;
+    transform: translateX(-999em);
+    transition: 0.3s;
+}
+.contain-link-burger a{
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 20px;
+}
+.contain-main{
+    transition: 0.5s;
+}
+.link-burger0{
+    display: none;
+}
+
+@media screen and ( max-width : 550px) {
+    .menu-burger{
+        display: flex;
+    }
+    nav{
+        display: none;
+    }
+}
